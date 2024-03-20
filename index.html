@@ -1,0 +1,1269 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>뉴버드 NEWBIRD</title>
+<meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+<meta name='Title' content='newbird'>
+<meta name='Subject' content='newbird 클론코딩'>
+<meta name='Keywords' content='newbird'>
+<meta name='Author' content='geunyoung'>
+<meta name='Publisher' content='geunyoung'>
+<meta name='Description' content='newbird 클론코딩 제작'>
+<meta name='Author-Date' content='20240220'>
+
+<!-- 접근성 텍스트(skip) 숨김 -->
+<style>#skip{overflow: hidden; position:absolute; width:0; height:0; line-height:0; text-indent:-9999px;}</style>
+
+<!-- 폰트어썸 -->
+<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.5.0/css/all.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+
+<!-- 구글폰트 아이콘 -->
+<link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0' />
+
+<!-- CSS 리셋 -->
+<link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css'>
+
+<!-- 제이쿼리 3.7 CDN -->
+<script src='https://code.jquery.com/jquery-3.7.0.min.js' crossorigin='anonymous'></script>
+
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+<!-- 로컬 CSS -->
+<link rel='stylesheet' href='./css/style.css'/>
+
+<!-- 로컬 js -->
+<script src='./js/script.js' defer></script>
+
+<!-- 스와이퍼 -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<!-- 스크롤 스와이퍼 -->
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- 파비콘 -->
+<link rel="icon" href="./img/Index/favicon.png" type="image/x-icon">
+
+
+</head>
+<body>
+<!-- 시각장애인 웹 접근성을 위한 skip _ 지우지않아도 됩니다. -->
+
+<ul id='skip'>
+   <li><a href='#header'>헤더 바로가기</a></li>
+   <li><a href='#nav'>메뉴 바로가기</a></li>
+   <li><a href='#content'>내용 바로가기</a></li>
+   <li><a href='#footer'>하단 바로가기</a></li>
+</ul>
+
+<div id="wrap" class="main">
+   <!-- header -->
+   <header id="header">
+      <div class="h_logo">
+         <a href="#" title="Go to Home">
+            <i class="hl_n"></i>
+            <i class="hl_e"></i>
+            <i class="hl_w"></i>
+            <i class="hl_b"></i>
+            <i class="hl_i"></i>
+            <i class="hl_r"></i>
+            <i class="hl_d"></i>
+            <i class="hl_bar"></i>
+            <h1 class="blind">NEWBIRD</h1>
+         </a>
+      </div>
+      <nav class="h_gnb">
+         <h2 class="blind">GNB</h2>
+         <i class="hg_icon icon1"></i>
+         <i class="hg_icon icon2"></i>
+         <i class="hg_icon icon3"></i>
+         <button type="button" class="hg_btn">
+            <span class="blind">Menu Button</span>
+         </button>
+         <div class="hg_wrap">
+            <ul>
+               <li>
+                  <a href="#" class="on">
+                     <span>인덱스</span>
+                  </a>
+               </li>
+               <li>
+                  <a href="#">
+                     <span>뉴버드 소개</span>
+                  </a>
+               </li>
+               <li>
+                  <a href="#">
+                     <span>서비스 소개</span>
+                  </a>
+               </li>
+               <li>
+                  <a href="#">
+                     <span>포트폴리오</span>
+                  </a>
+               </li>
+               <li>
+                  <a href="#">
+                     <span>상담신청</span>
+                  </a>
+               </li>
+            </ul>
+         </div>
+      </nav>
+   </header>
+   <!-- aside -->
+   <aside id="aside">
+      <div class="a_quick">
+         <ul>
+            <li>
+               <a href="#">
+                  <i class="aq_icon location"></i>
+                  <span class="blind">Location</span>
+               </a>
+            </li>
+            <li>
+               <a href="#">
+                  <i class="aq_icon mail"></i>
+                  <span class="blind">Send to mail</span>
+               </a>
+            </li>
+         </ul>
+      </div>
+      <div class="a_customer">
+         <h2 class="ac_title">CUSTOMER</h2>
+         <a href="#" class="ac_call">
+            <i></i>
+            <span>02-6404-4224</span>
+         </a>
+      </div>
+   </aside>
+   <!-- contents -->
+   <div id="content">
+      <div id="portfolio" class="c_position"></div>
+      <section class="c_intro height">
+         <div class="wrap height">
+            <div class="ci_visual">
+               <ul class="slideWrap">
+                  <!-- .slide.t1 -->
+                  <li class="slide t1">
+                     <img src="./img/Index/main1.jpg" alt="mainSlice1">
+                     <strong class="counter">0</strong>
+                  </li>
+                  <!-- .slide.t2 -->
+                  <li class="slide t2">
+                     <img src="./img/Index/main2.jpg" alt="mainSlice2">
+                     <a href="#" class="btn">VIEW</a>
+                  </li>
+               </ul>
+               <div class="slide-dots">
+                  <div class="slide-dot active">
+                     <span></span>
+                  </div>
+                  <div class="slide-dot">
+                     <span></span>
+                  </div>
+               </div>
+            </div>
+            <div class="ci_first"></div>
+            <div class="ci_last"></div>
+            <div class="ci_slogan">
+               <div class="cis_wrap">
+                  <h3>
+                     <span>WE ARE</span>
+                     <span>CREATIVE</span>
+                  </h3>
+                  <p>
+                     <span>
+                        <strong>뉴버드는 E-비즈니스 마케팅 에이전시 입니다.</strong>
+                     </span>
+                     <span>온라인 서비스 컨설팅과 홈페이지, 어플리케이션, 솔루션 개발 서비스를 제공하고 있습니다.</span>
+                  </p>
+                  <a href="#" class="btn arrow">MORE</a>
+               </div>
+            </div>
+            <div class="ci_scroll">
+               <a href="#c_portfolio" class="scroll" id="scrollButton">
+                  <i></i>
+                  <span>SCROLL</span>
+               </a>
+            </div>
+         </div>
+      </section>
+      <section class="c_portfolio" id="c_portfolio">
+         <div class="wrap">
+            <div class="c_title">
+               <p class="ct_e">
+                  <span>
+                     <mark>Passion leads to design, Design leads to performance,</mark>
+                  </span>
+                  <br>
+                  <span>
+                     <mark>Performance leads to success!</mark>
+                  </span>
+               </p>
+               <p class="ct_k">
+                  <span>성공적인 프로젝트를 약속합니다!</span>
+               </p>
+               <h2 class="ct_m">PORTFOLIO</h2>
+            </div>
+            <div id="page" class="c_wrap box">
+               <div class="tab div5">
+                  <ul>
+                     <li><a href="#!" id="a_all" onclick="showTab('box_all', this)" class="cp_a on">ALL</a></li>
+                     <li><a href="#!" id="a_homepage" onclick="showTab('box_homepage', this)" class="cp_a">HOMEPAGE</a></li>
+                     <li><a href="#!" id="a_shoppingmall" onclick="showTab('box_shoppingmall', this)" class="cp_a">SHOPPING MALL</a></li>
+                     <li><a href="#!" id="a_app" onclick="showTab('box_app', this)" class="cp_a">APP</a></li>
+                     <li><a href="#!" id="a_crm" onclick="showTab('box_crm', this)" class="cp_a">CRM/ERP</a></li>
+                  </ul>
+               </div>
+               <div class="cp_list" id="box_all">
+                  <ul>
+                     <li class="li_s">
+                        <div class="cpl_wrap">
+                           <div class="cpl_info">
+                              <div class="cpli_title">
+                                 <strong>오텍케리어</strong>
+                                 <span>PLANNING, UI/UX, PUBLISHING, DEVELOPMENT</span>
+                              </div>
+                              <ul>
+                                 <li>
+                                    <strong><mark>CLIENT</mark></strong>
+                                    <span>오텍캐리어(주)</span>
+                                 </li>
+                                 <li>
+                                    <strong><mark>WORK</mark></strong>
+                                    <span>E/M COMMERCE DEV</span>
+                                 </li>
+                                 <li>
+                                    <strong><mark>URL</mark></strong>
+                                    <a href="#" target="_blank">www.carriermall.co.kr</a>
+                                 </li>
+                              </ul>
+                           </div>
+                           <div class="cpl_pic pic1">
+                              <div class="cplp_info">
+                                 <a href="#"><span class="blind">MORE</span></a>
+                                 <strong>VIEW</strong>
+                              </div>
+                           </div>
+                        </div>
+                     </li>
+                     <li class="li_s">
+                        <div class="cpl_wrap">
+                           <div class="cpl_info">
+                              <div class="cpli_title">
+                                 <strong>위드뮤</strong>
+                                 <span>PLAN, UI/UX, DEVELOPMENT</span>
+                              </div>
+                              <ul>
+                                 <li>
+                                    <strong><mark>CLIENT</mark></strong>
+                                    <span>(주)코팬글로벌</span>
+                                 </li>
+                                 <li>
+                                    <strong><mark>WORK</mark></strong>
+                                    <span>E/M COMMERCE DEV</span>
+                                 </li>
+                                 <li>
+                                    <strong><mark>URL</mark></strong>
+                                    <a href="#" target="_blank">www.withmuu.com</a>
+                                 </li>
+                              </ul>
+                           </div>
+                           <div class="cpl_pic pic2">
+                              <div class="cplp_info">
+                                 <a href="#"><span class="blind">MORE</span></a>
+                                 <strong>VIEW</strong>
+                              </div>
+                           </div>
+                        </div>
+                     </li>
+                     <li class="li_s">
+                        <div class="cpl_wrap">
+                           <div class="cpl_info">
+                              <div class="cpli_title">
+                                 <strong>유로까브</strong>
+                                 <span>PLAN, UI/UX, DEVELOPMENT</span>
+                              </div>
+                              <ul>
+                                 <li>
+                                    <strong><mark>CLIENT</mark></strong>
+                                    <span>오텍캐리어냉장(유)</span>
+                                 </li>
+                                 <li>
+                                    <strong><mark>WORK</mark></strong>
+                                    <span>Brand Hompage UI/UX Dev</span>
+                                 </li>
+                                 <li>
+                                    <strong><mark>URL</mark></strong>
+                                    <a href="#" target="_blank">www.eurocave.co.kr</a>
+                                 </li>
+                              </ul>
+                           </div>
+                           <div class="cpl_pic pic3">
+                              <div class="cplp_info">
+                                 <a href="#"><span class="blind">MORE</span></a>
+                                 <strong>VIEW</strong>
+                              </div>
+                           </div>
+                        </div>
+                     </li>
+                     <li class="li_s">
+                        <div class="cpl_wrap">
+                           <div class="cpl_info">
+                              <div class="cpli_title">
+                                 <strong>원더플레이스</strong>
+                                 <span>PLANNING, UI/UX</span>
+                              </div>
+                              <ul>
+                                 <li>
+                                    <strong><mark>CLIENT</mark></strong>
+                                    <span>(주)원더플레이스</span>
+                                 </li>
+                                 <li>
+                                    <strong><mark>WORK</mark></strong>
+                                    <span>E/M COMMERCE DEV</span>
+                                 </li>
+                                 <li>
+                                    <strong><mark>URL</mark></strong>
+                                    <a href="#" target="_blank">www.wonderplace.co.kr</a>
+                                 </li>
+                              </ul>
+                           </div>
+                           <div class="cpl_pic pic4">
+                              <div class="cplp_info">
+                                 <a href="#"><span class="blind">MORE</span></a>
+                                 <strong>VIEW</strong>
+                              </div>
+                           </div>
+                        </div>
+                     </li>
+                     <li class="li_s">
+                        <div class="cpl_wrap">
+                           <div class="cpl_info">
+                              <div class="cpli_title">
+                                 <strong>닥터마틴</strong>
+                                 <span>PLANNING, UI/UX, PUBLISHING, DEVELOPMENT</span>
+                              </div>
+                              <ul>
+                                 <li>
+                                    <strong><mark>CLIENT</mark></strong>
+                                    <span>닥터마틴에어웨어코리아(주)</span>
+                                 </li>
+                                 <li>
+                                    <strong><mark>WORK</mark></strong>
+                                    <span>E/M COMMERCE DEV</span>
+                                 </li>
+                                 <li>
+                                    <strong><mark>URL</mark></strong>
+                                    <a href="#" target="_blank">www.drmartens.co.kr</a>
+                                 </li>
+                              </ul>
+                           </div>
+                           <div class="cpl_pic pic5">
+                              <div class="cplp_info">
+                                 <a href="#"><span class="blind">MORE</span></a>
+                                 <strong>VIEW</strong>
+                              </div>
+                           </div>
+                        </div>
+                     </li>
+                     <li class="li_s">
+                        <div class="cpl_wrap">
+                           <div class="cpl_info">
+                              <div class="cpli_title">
+                                 <strong>마이스킨솔루스</strong>
+                                 <span>PLANNING, UI/UX, PUBLISHING, DEVELOPMENT</span>
+                              </div>
+                              <ul>
+                                 <li>
+                                    <strong><mark>CLIENT</mark></strong>
+                                    <span>솔루스첨단소재(주)</span>
+                                 </li>
+                                 <li>
+                                    <strong><mark>WORK</mark></strong>
+                                    <span>E/M COMMERCE DEV</span>
+                                 </li>
+                                 <li>
+                                    <strong><mark>URL</mark></strong>
+                                    <a href="#" target="_blank">myskinsolus.com</a>
+                                 </li>
+                              </ul>
+                           </div>
+                           <div class="cpl_pic pic6">
+                              <div class="cplp_info">
+                                 <a href="#"><span class="blind">MORE</span></a>
+                                 <strong>VIEW</strong>
+                              </div>
+                           </div>
+                        </div>
+                     </li>
+                     <li class="li_s">
+                        <div class="cpl_wrap">
+                           <div class="cpl_info">
+                              <div class="cpli_title">
+                                 <strong>BTS QR 프로모션</strong>
+                                 <span></span>
+                              </div>
+                              <ul>
+                                 <li>
+                                    <strong><mark>CLIENT</mark></strong>
+                                    <span>㈜빅히트엔터테인먼트</span>
+                                 </li>
+                                 <li>
+                                    <strong><mark>WORK</mark></strong>
+                                    <span>php, codeIgniter</span>
+                                 </li>
+                                 <li>
+                                    <strong><mark>URL</mark></strong>
+                                    <a href="#" target="_blank">URL not available</a>
+                                 </li>
+                              </ul>
+                           </div>
+                           <div class="cpl_pic pic7">
+                              <div class="cplp_info">
+                                 <a href="#"><span class="blind">MORE</span></a>
+                                 <strong>VIEW</strong>
+                              </div>
+                           </div>
+                        </div>
+                     </li>
+                     <li class="li_s">
+                        <div class="cpl_wrap">
+                           <div class="cpl_info">
+                              <div class="cpli_title">
+                                 <strong>Stretch Angels</strong>
+                                 <span>PLANNING, UI/UX, PUBLISHING, DEVELOPMENT</span>
+                              </div>
+                              <ul>
+                                 <li>
+                                    <strong><mark>CLIENT</mark></strong>
+                                    <span>주식회사 에프엔에프</span>
+                                 </li>
+                                 <li>
+                                    <strong><mark>WORK</mark></strong>
+                                    <span>BRAND HOMEPAGE UI/UX DEV</span>
+                                 </li>
+                                 <li>
+                                    <strong><mark>URL</mark></strong>
+                                    <a href="#" target="_blank">URL not available</a>
+                                 </li>
+                              </ul>
+                           </div>
+                           <div class="cpl_pic pic8">
+                              <div class="cplp_info">
+                                 <a href="#"><span class="blind">MORE</span></a>
+                                 <strong>VIEW</strong>
+                              </div>
+                           </div>
+                        </div>
+                     </li>
+                     <li class="li_s">
+                        <div class="cpl_wrap">
+                           <div class="cpl_info">
+                              <div class="cpli_title">
+                                 <strong>drps</strong>
+                                 <span></span>
+                              </div>
+                              <ul>
+                                 <li>
+                                    <strong><mark>CLIENT</mark></strong>
+                                    <span>(주)신세계인터내셔날</span>
+                                 </li>
+                                 <li>
+                                    <strong><mark>WORK</mark></strong>
+                                    <span>반응형웹</span>
+                                 </li>
+                                 <li>
+                                    <strong><mark>URL</mark></strong>
+                                    <a href="#" target="_blank">URL not available</a>
+                                 </li>
+                              </ul>
+                           </div>
+                           <div class="cpl_pic pic9">
+                              <div class="cplp_info">
+                                 <a href="#"><span class="blind">MORE</span></a>
+                                 <strong>VIEW</strong>
+                              </div>
+                           </div>
+                        </div>
+                     </li>
+                     <li class="li_s">
+                        <div class="cpl_wrap">
+                           <div class="cpl_info">
+                              <div class="cpli_title">
+                                 <strong>코즈엔터테인먼트</strong>
+                                 <span></span>
+                              </div>
+                              <ul>
+                                 <li>
+                                    <strong><mark>CLIENT</mark></strong>
+                                    <span>(주)코즈엔터테인먼트</span>
+                                 </li>
+                                 <li>
+                                    <strong><mark>WORK</mark></strong>
+                                    <span>php</span>
+                                 </li>
+                                 <li>
+                                    <strong><mark>URL</mark></strong>
+                                    <a href="#" target="_blank">kozofficial.com</a>
+                                 </li>
+                              </ul>
+                           </div>
+                           <div class="cpl_pic pic10">
+                              <div class="cplp_info">
+                                 <a href="#"><span class="blind">MORE</span></a>
+                                 <strong>VIEW</strong>
+                              </div>
+                           </div>
+                        </div>
+                     </li>
+                  </ul>
+               </div>
+               <div class="cp_list" id="box_homepage">
+                  <ul>
+                     <li class="li_s">
+                        <div class="cpl_wrap">
+                           <div class="cpl_info">
+                              <div class="cpli_title">
+                                 <strong>WWF KOREA</strong>
+                                 <span>PLAN, UI/UX, DEVELOPMENT</span>
+                              </div>
+                              <ul>
+                                 <li>
+                                    <strong><mark>CLIENT</mark></strong>
+                                    <span>재단법인 한국세계자연기금</span>
+                                 </li>
+                                 <li>
+                                    <strong><mark>WORK</mark></strong>
+                                    <span>HOMEPAGE RENEWAL</span>
+                                 </li>
+                                 <li>
+                                    <strong><mark>URL</mark></strong>
+                                    <a href="#" target="_blank">www.wwfkorea.or.krMOREVIEW</a>
+                                 </li>
+                              </ul>
+                           </div>
+                           <div class="cpl_pic pic11">
+                              <div class="cplp_info">
+                                 <a href="#"><span class="blind">MORE</span></a>
+                                 <strong>VIEW</strong>
+                              </div>
+                           </div>
+                        </div>
+                     </li>
+                     <li class="li_s">
+                        <div class="cpl_wrap">
+                           <div class="cpl_info">
+                              <div class="cpli_title">
+                                 <strong>유로까브</strong>
+                                 <span>PLAN, UI/UX, DEVELOPMENT</span>
+                              </div>
+                              <ul>
+                                 <li>
+                                    <strong><mark>CLIENT</mark></strong>
+                                    <span>오텍캐리어냉장(유)</span>
+                                 </li>
+                                 <li>
+                                    <strong><mark>WORK</mark></strong>
+                                    <span>Brand Hompage UI/UX Dev</span>
+                                 </li>
+                                 <li>
+                                    <strong><mark>URL</mark></strong>
+                                    <a href="#" target="_blank">www.eurocave.co.kr</a>
+                                 </li>
+                              </ul>
+                           </div>
+                           <div class="cpl_pic pic3">
+                              <div class="cplp_info">
+                                 <a href="#"><span class="blind">MORE</span></a>
+                                 <strong>VIEW</strong>
+                              </div>
+                           </div>
+                        </div>
+                     </li>
+                     <li class="li_s">
+                        <div class="cpl_wrap">
+                           <div class="cpl_info">
+                              <div class="cpli_title">
+                                 <strong>BTS QR 프로모션</strong>
+                                 <span></span>
+                              </div>
+                              <ul>
+                                 <li>
+                                    <strong><mark>CLIENT</mark></strong>
+                                    <span>㈜빅히트엔터테인먼트</span>
+                                 </li>
+                                 <li>
+                                    <strong><mark>WORK</mark></strong>
+                                    <span>php, codeIgniter</span>
+                                 </li>
+                                 <li>
+                                    <strong><mark>URL</mark></strong>
+                                    <a href="#" target="_blank">URL not available</a>
+                                 </li>
+                              </ul>
+                           </div>
+                           <div class="cpl_pic pic7">
+                              <div class="cplp_info">
+                                 <a href="#"><span class="blind">MORE</span></a>
+                                 <strong>VIEW</strong>
+                              </div>
+                           </div>
+                        </div>
+                     </li>
+                     <li class="li_s">
+                        <div class="cpl_wrap">
+                           <div class="cpl_info">
+                              <div class="cpli_title">
+                                 <strong>IKAOS</strong>
+                                 <span></span>
+                              </div>
+                              <ul>
+                                 <li>
+                                    <strong><mark>CLIENT</mark></strong>
+                                    <span>카오스 재단</span>
+                                 </li>
+                                 <li>
+                                    <strong><mark>WORK</mark></strong>
+                                    <span>php</span>
+                                 </li>
+                                 <li>
+                                    <strong><mark>URL</mark></strong>
+                                    <a href="#" target="_blank">ikaos.org</a>
+                                 </li>
+                              </ul>
+                           </div>
+                           <div class="cpl_pic pic12">
+                              <div class="cplp_info">
+                                 <a href="#"><span class="blind">MORE</span></a>
+                                 <strong>VIEW</strong>
+                              </div>
+                           </div>
+                        </div>
+                     </li>
+                     <li class="li_s">
+                        <div class="cpl_wrap">
+                           <div class="cpl_info">
+                              <div class="cpli_title">
+                                 <strong>Stretch Angels</strong>
+                                 <span>PLANNING, UI/UX, PUBLISHING, DEVELOPMENT</span>
+                              </div>
+                              <ul>
+                                 <li>
+                                    <strong><mark>CLIENT</mark></strong>
+                                    <span>주식회사 에프엔에프</span>
+                                 </li>
+                                 <li>
+                                    <strong><mark>WORK</mark></strong>
+                                    <span>BRAND HOMEPAGE UI/UX DEV</span>
+                                 </li>
+                                 <li>
+                                    <strong><mark>URL</mark></strong>
+                                    <a href="#" target="_blank">URL not available</a>
+                                 </li>
+                              </ul>
+                           </div>
+                           <div class="cpl_pic pic8">
+                              <div class="cplp_info">
+                                 <a href="#"><span class="blind">MORE</span></a>
+                                 <strong>VIEW</strong>
+                              </div>
+                           </div>
+                        </div>
+                     </li>
+                     <li class="li_s">
+                        <div class="cpl_wrap">
+                           <div class="cpl_info">
+                              <div class="cpli_title">
+                                 <strong>ATEEZ</strong>
+                                 <span></span>
+                              </div>
+                              <ul>
+                                 <li>
+                                    <strong><mark>CLIENT</mark></strong>
+                                    <span>주식회사 케이큐엔터테인먼트</span>
+                                 </li>
+                                 <li>
+                                    <strong><mark>WORK</mark></strong>
+                                    <span>php, 반응형웹</span>
+                                 </li>
+                                 <li>
+                                    <strong><mark>URL</mark></strong>
+                                    <a href="#" target="_blank">ateez.kqent.com</a>
+                                 </li>
+                              </ul>
+                           </div>
+                           <div class="cpl_pic pic13">
+                              <div class="cplp_info">
+                                 <a href="#"><span class="blind">MORE</span></a>
+                                 <strong>VIEW</strong>
+                              </div>
+                           </div>
+                        </div>
+                     </li>
+                     <li class="li_s">
+                        <div class="cpl_wrap">
+                           <div class="cpl_info">
+                              <div class="cpli_title">
+                                 <strong>drps</strong>
+                                 <span></span>
+                              </div>
+                              <ul>
+                                 <li>
+                                    <strong><mark>CLIENT</mark></strong>
+                                    <span>(주)신세계인터내셔날</span>
+                                 </li>
+                                 <li>
+                                    <strong><mark>WORK</mark></strong>
+                                    <span>반응형웹</span>
+                                 </li>
+                                 <li>
+                                    <strong><mark>URL</mark></strong>
+                                    <a href="#" target="_blank">URL not available</a>
+                                 </li>
+                              </ul>
+                           </div>
+                           <div class="cpl_pic pic9">
+                              <div class="cplp_info">
+                                 <a href="#"><span class="blind">MORE</span></a>
+                                 <strong>VIEW</strong>
+                              </div>
+                           </div>
+                        </div>
+                     </li>
+                     <li class="li_s">
+                        <div class="cpl_wrap">
+                           <div class="cpl_info">
+                              <div class="cpli_title">
+                                 <strong>코즈엔터테인먼트</strong>
+                                 <span></span>
+                              </div>
+                              <ul>
+                                 <li>
+                                    <strong><mark>CLIENT</mark></strong>
+                                    <span>(주)코즈엔터테인먼트</span>
+                                 </li>
+                                 <li>
+                                    <strong><mark>WORK</mark></strong>
+                                    <span>php</span>
+                                 </li>
+                                 <li>
+                                    <strong><mark>URL</mark></strong>
+                                    <a href="#" target="_blank">kozofficial.com</a>
+                                 </li>
+                              </ul>
+                           </div>
+                           <div class="cpl_pic pic10">
+                              <div class="cplp_info">
+                                 <a href="#"><span class="blind">MORE</span></a>
+                                 <strong>VIEW</strong>
+                              </div>
+                           </div>
+                        </div>
+                     </li>
+                     <li class="li_s">
+                        <div class="cpl_wrap">
+                           <div class="cpl_info">
+                              <div class="cpli_title">
+                                 <strong>월드비전 캠페인</strong>
+                                 <span></span>
+                              </div>
+                              <ul>
+                                 <li>
+                                    <strong><mark>CLIENT</mark></strong>
+                                    <span>사회복지법인 월드비전</span>
+                                 </li>
+                                 <li>
+                                    <strong><mark>WORK</mark></strong>
+                                    <span>반응형웹</span>
+                                 </li>
+                                 <li>
+                                    <strong><mark>URL</mark></strong>
+                                    <a href="#" target="_blank">worldvision.or.kr</a>
+                                 </li>
+                              </ul>
+                           </div>
+                           <div class="cpl_pic pic14">
+                              <div class="cplp_info">
+                                 <a href="#"><span class="blind">MORE</span></a>
+                                 <strong>VIEW</strong>
+                              </div>
+                           </div>
+                        </div>
+                     </li>
+                  </ul>
+               </div>
+               <div class="cp_list" id="box_shoppingmall">
+                  <ul>
+                     <li class="li_s">
+                        <div class="cpl_wrap">
+                           <div class="cpl_info">
+                              <div class="cpli_title">
+                                 <strong>오텍케리어</strong>
+                                 <span>PLANNING, UI/UX, PUBLISHING, DEVELOPMENT</span>
+                              </div>
+                              <ul>
+                                 <li>
+                                    <strong><mark>CLIENT</mark></strong>
+                                    <span>오텍캐리어(주)</span>
+                                 </li>
+                                 <li>
+                                    <strong><mark>WORK</mark></strong>
+                                    <span>E/M COMMERCE DEV</span>
+                                 </li>
+                                 <li>
+                                    <strong><mark>URL</mark></strong>
+                                    <a href="#" target="_blank">www.carriermall.co.kr</a>
+                                 </li>
+                              </ul>
+                           </div>
+                           <div class="cpl_pic pic1">
+                              <div class="cplp_info">
+                                 <a href="#"><span class="blind">MORE</span></a>
+                                 <strong>VIEW</strong>
+                              </div>
+                           </div>
+                        </div>
+                     </li>
+                     <li class="li_s">
+                        <div class="cpl_wrap">
+                           <div class="cpl_info">
+                              <div class="cpli_title">
+                                 <strong>위드뮤</strong>
+                                 <span>PLAN, UI/UX, DEVELOPMENT</span>
+                              </div>
+                              <ul>
+                                 <li>
+                                    <strong><mark>CLIENT</mark></strong>
+                                    <span>(주)코팬글로벌</span>
+                                 </li>
+                                 <li>
+                                    <strong><mark>WORK</mark></strong>
+                                    <span>E/M COMMERCE DEV</span>
+                                 </li>
+                                 <li>
+                                    <strong><mark>URL</mark></strong>
+                                    <a href="#" target="_blank">www.withmuu.com</a>
+                                 </li>
+                              </ul>
+                           </div>
+                           <div class="cpl_pic pic2">
+                              <div class="cplp_info">
+                                 <a href="#"><span class="blind">MORE</span></a>
+                                 <strong>VIEW</strong>
+                              </div>
+                           </div>
+                        </div>
+                     </li>
+                     <li class="li_s">
+                        <div class="cpl_wrap">
+                           <div class="cpl_info">
+                              <div class="cpli_title">
+                                 <strong>원더플레이스</strong>
+                                 <span>PLANNING, UI/UX</span>
+                              </div>
+                              <ul>
+                                 <li>
+                                    <strong><mark>CLIENT</mark></strong>
+                                    <span>(주)원더플레이스</span>
+                                 </li>
+                                 <li>
+                                    <strong><mark>WORK</mark></strong>
+                                    <span>E/M COMMERCE DEV</span>
+                                 </li>
+                                 <li>
+                                    <strong><mark>URL</mark></strong>
+                                    <a href="#" target="_blank">www.wonderplace.co.kr</a>
+                                 </li>
+                              </ul>
+                           </div>
+                           <div class="cpl_pic pic4">
+                              <div class="cplp_info">
+                                 <a href="#"><span class="blind">MORE</span></a>
+                                 <strong>VIEW</strong>
+                              </div>
+                           </div>
+                        </div>
+                     </li>
+                     <li class="li_s">
+                        <div class="cpl_wrap">
+                           <div class="cpl_info">
+                              <div class="cpli_title">
+                                 <strong>닥터마틴</strong>
+                                 <span>PLANNING, UI/UX, PUBLISHING, DEVELOPMENT</span>
+                              </div>
+                              <ul>
+                                 <li>
+                                    <strong><mark>CLIENT</mark></strong>
+                                    <span>닥터마틴에어웨어코리아(주)</span>
+                                 </li>
+                                 <li>
+                                    <strong><mark>WORK</mark></strong>
+                                    <span>E/M COMMERCE DEV</span>
+                                 </li>
+                                 <li>
+                                    <strong><mark>URL</mark></strong>
+                                    <a href="#" target="_blank">www.drmartens.co.kr</a>
+                                 </li>
+                              </ul>
+                           </div>
+                           <div class="cpl_pic pic5">
+                              <div class="cplp_info">
+                                 <a href="#"><span class="blind">MORE</span></a>
+                                 <strong>VIEW</strong>
+                              </div>
+                           </div>
+                        </div>
+                     </li>
+                     <li class="li_s">
+                        <div class="cpl_wrap">
+                           <div class="cpl_info">
+                              <div class="cpli_title">
+                                 <strong>프롬비</strong>
+                                 <span>PLANNING, UI/UX, PUBLISHING, DEVELOPMENT</span>
+                              </div>
+                              <ul>
+                                 <li>
+                                    <strong><mark>CLIENT</mark></strong>
+                                    <span>프롬비(주)</span>
+                                 </li>
+                                 <li>
+                                    <strong><mark>WORK</mark></strong>
+                                    <span>cafe24</span>
+                                 </li>
+                                 <li>
+                                    <strong><mark>URL</mark></strong>
+                                    <a href="#" target="_blank">frombshop.com</a>
+                                 </li>
+                              </ul>
+                           </div>
+                           <div class="cpl_pic pic15">
+                              <div class="cplp_info">
+                                 <a href="#"><span class="blind">MORE</span></a>
+                                 <strong>VIEW</strong>
+                              </div>
+                           </div>
+                        </div>
+                     </li>
+                     <li class="li_s">
+                        <div class="cpl_wrap">
+                           <div class="cpl_info">
+                              <div class="cpli_title">
+                                 <strong>마이스킨솔루스</strong>
+                                 <span>PLANNING, UI/UX, PUBLISHING, DEVELOPMENT</span>
+                              </div>
+                              <ul>
+                                 <li>
+                                    <strong><mark>CLIENT</mark></strong>
+                                    <span>솔루스첨단소재(주)</span>
+                                 </li>
+                                 <li>
+                                    <strong><mark>WORK</mark></strong>
+                                    <span>E/M COMMERCE DEV</span>
+                                 </li>
+                                 <li>
+                                    <strong><mark>URL</mark></strong>
+                                    <a href="#" target="_blank">myskinsolus.com</a>
+                                 </li>
+                              </ul>
+                           </div>
+                           <div class="cpl_pic pic6">
+                              <div class="cplp_info">
+                                 <a href="#"><span class="blind">MORE</span></a>
+                                 <strong>VIEW</strong>
+                              </div>
+                           </div>
+                        </div>
+                     </li>
+                     <li class="li_s">
+                        <div class="cpl_wrap">
+                           <div class="cpl_info">
+                              <div class="cpli_title">
+                                 <strong>올보이스</strong>
+                                 <span>쇼핑몰, APP</span>
+                              </div>
+                              <ul>
+                                 <li>
+                                    <strong><mark>CLIENT</mark></strong>
+                                    <span>올보이스㈜</span>
+                                 </li>
+                                 <li>
+                                    <strong><mark>WORK</mark></strong>
+                                    <span>php</span>
+                                 </li>
+                                 <li>
+                                    <strong><mark>URL</mark></strong>
+                                    <a href="#" target="_blank">allvoice.kr</a>
+                                 </li>
+                              </ul>
+                           </div>
+                           <div class="cpl_pic pic16">
+                              <div class="cplp_info">
+                                 <a href="#"><span class="blind">MORE</span></a>
+                                 <strong>VIEW</strong>
+                              </div>
+                           </div>
+                        </div>
+                     </li>
+                     <li class="li_s">
+                        <div class="cpl_wrap">
+                           <div class="cpl_info">
+                              <div class="cpli_title">
+                                 <strong>칠갑농산</strong>
+                                 <span></span>
+                              </div>
+                              <ul>
+                                 <li>
+                                    <strong><mark>CLIENT</mark></strong>
+                                    <span>칠갑농산 유한회사</span>
+                                 </li>
+                                 <li>
+                                    <strong><mark>WORK</mark></strong>
+                                    <span>cafe24</span>
+                                 </li>
+                                 <li>
+                                    <strong><mark>URL</mark></strong>
+                                    <a href="#" target="_blank">chilkab.co.kr</a>
+                                 </li>
+                              </ul>
+                           </div>
+                           <div class="cpl_pic pic17">
+                              <div class="cplp_info">
+                                 <a href="#"><span class="blind">MORE</span></a>
+                                 <strong>VIEW</strong>
+                              </div>
+                           </div>
+                        </div>
+                     </li>
+                     <li class="li_s">
+                        <div class="cpl_wrap">
+                           <div class="cpl_info">
+                              <div class="cpli_title">
+                                 <strong>라이프워크</strong>
+                                 <span></span>
+                              </div>
+                              <ul>
+                                 <li>
+                                    <strong><mark>CLIENT</mark></strong>
+                                    <span>(주)하이드웨이</span>
+                                 </li>
+                                 <li>
+                                    <strong><mark>WORK</mark></strong>
+                                    <span>php, codeIgniter</span>
+                                 </li>
+                                 <li>
+                                    <strong><mark>URL</mark></strong>
+                                    <a href="#" target="_blank">lifeworkstore.co.kr</a>
+                                 </li>
+                              </ul>
+                           </div>
+                           <div class="cpl_pic pic18">
+                              <div class="cplp_info">
+                                 <a href="#"><span class="blind">MORE</span></a>
+                                 <strong>VIEW</strong>
+                              </div>
+                           </div>
+                        </div>
+                     </li>
+                  </ul>
+               </div>
+               <div class="cp_list" id="box_app">
+                  <ul>
+                     <li class="li_s">
+                        <div class="cpl_wrap">
+                           <div class="cpl_info">
+                              <div class="cpli_title">
+                                 <strong>서울랜드</strong>
+                                 <span></span>
+                              </div>
+                              <ul>
+                                 <li>
+                                    <strong><mark>CLIENT</mark></strong>
+                                    <span>(주)서울랜드</span>
+                                 </li>
+                                 <li>
+                                    <strong><mark>WORK</mark></strong>
+                                    <span>APP</span>
+                                 </li>
+                                 <li>
+                                    <strong><mark>URL</mark></strong>
+                                    <a href="#" target="_blank">URL not available</a>
+                                 </li>
+                              </ul>
+                           </div>
+                           <div class="cpl_pic pic19">
+                              <div class="cplp_info">
+                                 <a href="#"><span class="blind">MORE</span></a>
+                                 <strong>VIEW</strong>
+                              </div>
+                           </div>
+                        </div>
+                     </li>
+                     <li class="li_s">
+                        <div class="cpl_wrap">
+                           <div class="cpl_info">
+                              <div class="cpli_title">
+                                 <strong>한국전기안전공사</strong>
+                                 <span></span>
+                              </div>
+                              <ul>
+                                 <li>
+                                    <strong><mark>CLIENT</mark></strong>
+                                    <span>한국전기안전공사</span>
+                                 </li>
+                                 <li>
+                                    <strong><mark>WORK</mark></strong>
+                                    <span>APP</span>
+                                 </li>
+                                 <li>
+                                    <strong><mark>URL</mark></strong>
+                                    <a href="#" target="_blank">URL not available</a>
+                                 </li>
+                              </ul>
+                           </div>
+                           <div class="cpl_pic pic20">
+                              <div class="cplp_info">
+                                 <a href="#"><span class="blind">MORE</span></a>
+                                 <strong>VIEW</strong>
+                              </div>
+                           </div>
+                        </div>
+                     </li>
+                  </ul>
+               </div>
+               <div class="cp_list" id="box_crm"></div>
+               <div class="btn_wrap">
+                  <a href="#" class="btn big t1 arrow">MORE</a>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="c_project number_point">
+         <div class="cp_txt">
+            <h3>PROJECT COMPLETION</h3>
+            <p>
+               <strong>2023</strong>
+               년, 현재까지
+               <strong class="number">0</strong>
+               개의 프로젝트를 완료했습니다.
+            </p>
+         </div>
+         <div class="cp_wrap">
+            <!-- Swiper -->
+              <div class="swiper mySwiper">
+               <div class="swiper-wrapper">
+                 <div class="swiper-slide swImg"><img src="./img/Index/project01.jpg" alt=""></div>
+                 <div class="swiper-slide swImg"><img src="./img/Index/project02.jpg" alt=""></div>
+                 <div class="swiper-slide swImg"><img src="./img/Index/project03.jpg" alt=""></div>
+                 <div class="swiper-slide swImg"><img src="./img/Index/project04.jpg" alt=""></div>
+                 <div class="swiper-slide swImg"><img src="./img/Index/project05.jpg" alt=""></div>
+                 <div class="swiper-slide swImg"><img src="./img/Index/project06.jpg" alt=""></div>
+                 <div class="swiper-slide swImg"><img src="./img/Index/project07.jpg" alt=""></div>
+                 <div class="swiper-slide swImg"><img src="./img/Index/project08.jpg" alt=""></div>
+                 <div class="swiper-slide swImg"><img src="./img/Index/project09.jpg" alt=""></div>
+                 <div class="swiper-slide swImg"><img src="./img/Index/project10.jpg" alt=""></div>
+                 <div class="swiper-slide swImg"><img src="./img/Index/project11.jpg" alt=""></div>
+                 <div class="swiper-slide swImg"><img src="./img/Index/project12.jpg" alt=""></div>
+                 <div class="swiper-slide swImg"><img src="./img/Index/project13.jpg" alt=""></div>
+                 <div class="swiper-slide swImg"><img src="./img/Index/project14.jpg" alt=""></div>
+                 <div class="swiper-slide swImg"><img src="./img/Index/project15.jpg" alt=""></div>
+                 <div class="swiper-slide swImg"><img src="./img/Index/project16.jpg" alt=""></div>
+                 <div class="swiper-slide swImg"><img src="./img/Index/project17.png" alt=""></div>
+                 <div class="swiper-slide swImg"><img src="./img/Index/project18.jpg" alt=""></div>
+                 <div class="swiper-slide swImg"><img src="./img/Index/project19.jpg" alt=""></div>
+                 <div class="swiper-slide swImg"><img src="./img/Index/project20.jpg" alt=""></div>
+                 <div class="swiper-slide swImg"><img src="./img/Index/project21.jpg" alt=""></div>
+               </div>
+ </div>
+         </div>
+      </section>
+   </div>
+   <!-- footer -->
+   <footer id="footer">
+      <div class="wrap">
+         <div class="f_title">
+            <p class="ft_e">
+               <span>
+                  <mark>The most important step is understanding and</mark>
+               </span>
+               <br>
+               <span>
+                  <mark>Empathizing with project.</mark>
+               </span>
+            </p>
+            <p class="ft_k">
+               <span>뉴버드는 e비즈니스 마케팅 에이전시입니다.</span>
+            </p>
+            <h2 class="ft_m">NEWBIRD</h2>
+         </div>
+         <div class="f_wrap box">
+            <div class="f_info">
+               <ul>
+                  <li>
+                     <strong>COMPANY</strong>
+                     <span class="cm">(주)뉴버드</span>
+                  </li>
+                  <li class="fi_address">
+                     <strong>ADDRESS</strong>
+                     <span>서울특별시 서대문구 연희로2길 76 한빛빌딩A동 1층</span>
+                  </li>
+                  <li>
+                     <strong>BUSINESS LICENSE</strong>
+                     <span>332-81-00662</span>
+                  </li>
+                  <li>
+                     <strong>TEL</strong>
+                     <span><a href="#">02-6404-4224</a></span>
+                  </li>
+                  <li>
+                     <strong>E-MAIL</strong>
+                     <span>
+                        <a href="#">info@newbird.co.kr</a>
+                     </span>
+                  </li>
+               </ul>
+            </div>
+            <div class="f_btn">
+               <ul>
+                  <li>
+                     <a href="#" class="btn big t2 arrow">
+                        CONTACT
+                     </a>
+                  </li>
+                  <li>
+                     <a href="#" class="btn big arrow">
+                        LOCATION
+                     </a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </div>
+      <hr>
+      <div class="f_download">
+         <a href="#">
+            <span>
+               <strong>COMPANY</strong>
+               BROCHURE
+            </span>
+            <i></i>
+         </a>
+      </div>
+      <hr>
+      <div class="f_copyright">
+         &copy; 2020
+         <strong>NEWBIRD</strong>
+      </div>
+   </footer>
+   <!-- 팝업, 오시는 길 -->
+   <div class="popup location"></div>
+</div>
+
+
+</body>
+</html>
